@@ -149,3 +149,62 @@ let person = {
 
 - `'use strict'`
     - Puts JS file in the strict mode and this forces you to declare the variable
+
+### Switch Case
+- Default case can be placed anywhere in the switch block
+- If *break* not there in one of the case then it will go on till the next case
+- Switch does a strict comparison
+    - Type and value must match
+
+- By wrapping a block of code in bracesm any variable declared within that block is only visible within the block, and is released once the block ends.
+
+
+### For/in and For/of
+- For/in 
+    - Iterates over elements of object (properties and methods)
+    - Example - for(const key in product)
+
+- For/of 
+    - Iterates over values in array, string etc.
+    - Example - for(const item of _product)
+    - Example - for(const char of productName)
+
+- Label in JS
+    - Label is any name you want followed by a colon
+    - Not recommended
+    - Example
+        ```
+        function labelSample(){
+            even:
+            for(let index = 1; index <= 10; index++){
+                if(index % 2 == 1) {
+                    continue even;
+                }
+                console.log(index);
+            }
+        }
+        ```
+
+- we can delete variable and function in JS
+
+### Short Circuiting 
+
+- &&, if one first one is false then it wont execute next part
+- ||, if first one is true then it wont execute the other side
+
+### Object Data Type / Constructor
+
+- All object data types inherit from Object (not primitive)
+- Object has constructor property, which returns a reference to the object itself
+
+- Object literals and primitives are cast to objects for display
+
+
+### this
+- *this* in the global scope refers to *window* object, but in the case of `'use strict'` it will throw an error saying *this* is undefined.
+
+- call() and apply()
+    - call takes parameter to set it to this / what is passed to call()/apply() methods becomes 'this'
+
+
+### Spread opeartor  
