@@ -208,3 +208,12 @@ let person = {
 
 
 ### Spread opeartor  
+-
+```
+function stringToArray() {
+    let productNumber = "ABCDEF";
+    let values = [...productNumber] //has character array
+}
+```
+
+- Shallow copy on Object Literal
