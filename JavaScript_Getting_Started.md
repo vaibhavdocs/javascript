@@ -1,11 +1,26 @@
-- We can use Electron to create Mac & Windows desktop apps
+We can use Electron to create Mac & Windows desktop apps
 
 ### Variables
 - We use *let* to declare variables and *const* to declare constants. We used to declare variables using *var* keyword.
  - Problem with *var*
     - variables can be used before their declaration but it may resolve to *undefined*. This creates problems
 
-- *let* and *const* initialises variable with block level scope whereas *var* has somewhat global
+- *let* and *const* initialises variable with block (within the curly braces) level scope whereas *var* has global and function scope
+
+- var 
+    - No block scope
+    - Can be redeclared anywhere
+    - Can be used and reassigned anywhere
+
+- let 
+    - Block scope
+    - Can Not be redeclared within scope
+    - Can be reassigned within scope
+
+- const
+    - Block scope
+    - Can not be reassinged or redeclared 
+    - The value it references can be changed. Example - like a property in an object or array.
 
 ### Data types 
 
@@ -94,7 +109,7 @@ let person = {
 
 ```
 
-- Same as Java where when we use object we change the reference so it reflects even outside the methods. Same goes for JS Object
+- Same as Java where when we use object we change the reference so it reflects even outside the methods. Same goes for JS Object.
 **Object are passed by reference**
 
 
@@ -208,7 +223,6 @@ let person = {
 
 
 ### Spread opeartor  
--
 ```
 function stringToArray() {
     let productNumber = "ABCDEF";
@@ -217,3 +231,4 @@ function stringToArray() {
 ```
 
 - Shallow copy on Object Literal
+
