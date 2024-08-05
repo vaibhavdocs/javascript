@@ -1,7 +1,12 @@
+function outest(b){
 function outer() {
-    var a = 10;
+    let a = 10;
     function inner(){
-        console.log(a)
+        console.log(a,b)
     }
+    return inner
 }
-outer()
+return outer
+}
+var a = 100
+outest("hello")()()
